@@ -7,7 +7,7 @@ RUN apk -v --update add \
 	ca-certificates \
 	&& \
 	pip install awscli && \
-        apk -v --purge del py-pip && \
+    apk -v --purge del py-pip && \
 	rm -rf /var/cache/apk/*
 VOLUME /root/.aws
 VOLUME /project
